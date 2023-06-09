@@ -4,7 +4,11 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { useState } from 'react';
 
 const columns = [
-	{ field: 'id', headerName: 'ID', width: 90, flex: 1 },
+	{ 	field: 'id', 
+		headerName: 'ID', 
+		width: 90, 
+		flex: 1 
+	},
 	
 	{
 		field: 'department',
@@ -41,15 +45,7 @@ const Semester = () => {
 				disableRowSelectionOnClick
 			/>
 		</Box>
-		<Button 
-			color="primary" 
-			variant='contained' 
-			onClick={() =>{
-				console.log("Button Clicked");
-			}}
-		>
-			Add Department
-		</Button>
+		
 		</div>
 	)
 };

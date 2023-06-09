@@ -1,13 +1,14 @@
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import RecordVoiceOverOutlinedIcon from '@mui/icons-material/RecordVoiceOverOutlined';
+//import RecordVoiceOverOutlinedIcon from '@mui/icons-material/RecordVoiceOverOutlined';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
+import { RiTodoLine } from 'react-icons/ri';
 
 const sidebarOptions = [
     {
         caption: "Courses",
         route: "/student-courses",
-        icon: <RecordVoiceOverOutlinedIcon style={{color: "#7e96cf"}}/>
+        icon: <RiTodoLine style={{color: "#7e96cf"}}/>
     },
     {
         caption: "Semesters",

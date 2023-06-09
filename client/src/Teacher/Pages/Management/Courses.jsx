@@ -7,8 +7,8 @@ const columns = [
 	{ field: 'id', headerName: 'ID', width: 90, flex: 1 },
 	
 	{
-		field: 'department',
-		headerName: 'Department',
+		field: 'courses',
+		headerName: 'Courses',
 		width: 110,
 		editable: true,
 		flex: 1
@@ -18,7 +18,9 @@ const columns = [
 
 const Courses = () => {
 	const [teachers, setTeachers] = useState([
-		{ id: 1, lastName: 'Snow', firstName: 'Jon', department: "CSE" },
+		{ id: 1, courses: "B.Tech" },
+		{ id: 2, courses: "M.Sc" },
+		{ id: 3, courses: "M.Tech" },
 		
 	]);
 
@@ -41,15 +43,7 @@ const Courses = () => {
 				disableRowSelectionOnClick
 			/>
 		</Box>
-		<Button 
-			color="primary" 
-			variant='contained' 
-			onClick={() =>{
-				console.log("Button Clicked");
-			}}
-		>
-			Add Department
-		</Button>
+		
 		</div>
 	)
 };

@@ -41,15 +41,7 @@ const TeacherDepartments = () => {
 				disableRowSelectionOnClick
 			/>
 		</Box>
-		<Button 
-			color="primary" 
-			variant='contained' 
-			onClick={() =>{
-				console.log("Button Clicked");
-			}}
-		>
-			Add Department
-		</Button>
+		
 		</div>
 	)
 };
