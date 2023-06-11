@@ -117,14 +117,14 @@ img {
   position: relative;
   display: flex;
   flex-basis: 50%;
-  width: 70%;
+  width: 50%;
   height: 100%;
   padding: 0 1.5rem;
   text-align: center;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
 }
 .loginPage .container .imageDiv img, .loginPage .container .imageDiv .footerDiv, .registerPage .container .imageDiv img, .registerPage .container .imageDiv .footerDiv {
@@ -133,8 +133,8 @@ img {
 .loginPage .container .imageDiv img, .registerPage .container .imageDiv img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: flex-cover;
+     object-fit: flex-cover;
   top: 0;
   bottom: 0;
   right: 0;

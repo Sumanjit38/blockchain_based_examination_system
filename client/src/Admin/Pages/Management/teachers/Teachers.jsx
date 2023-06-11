@@ -26,6 +26,7 @@ const columns = [
 		editable: true,
 		flex: 1
 	},
+	
 	{
 		field: 'email',
 		headerName: 'Email',

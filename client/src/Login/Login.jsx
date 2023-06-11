@@ -18,8 +18,8 @@ const Login = () => {
           <img src={img}></img>
 
           <div className="textDiv">
-            <h2 className="title">Login</h2>
-            <p>Welcome Back!</p>
+            <h2 className="title">Sign Up</h2>
+            
           </div>
 
           <div className="footerDiv flex">

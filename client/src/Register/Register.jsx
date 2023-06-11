@@ -20,7 +20,7 @@ const Register = () => {
 
           <div className="textDiv">
             <h2 className="title">Login</h2>
-            <p>Welcome Back!</p>
+            
           </div>
 
           <div className="footerDiv flex">
