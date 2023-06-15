@@ -26,6 +26,27 @@ const columns = [
 		editable: true,
 		flex: 1
 	},
+	{
+		field: 'course',
+		headerName: 'Course',
+		width: 250,
+		editable: true,
+		flex: 1
+	},
+	{
+		field: 'semester',
+		headerName: 'Semester',
+		width: 250,
+		editable: true,
+		flex: 1
+	},
+	{
+		field: 'subject',
+		headerName: 'Subject',
+		width: 250,
+		editable: true,
+		flex: 1
+	},
 	
 	{
 		field: 'email',
@@ -45,15 +66,15 @@ const columns = [
 
 const Teachers = () => {
 	const [teachers, setTeachers] = useState([
-		{ id: 1, lastName: 'Snow', firstName: 'Jon', department: "CSE" },
-		{ id: 2, lastName: 'Lannister', firstName: 'Cersei', department: "CSE" },
-		{ id: 3, lastName: 'Lannister', firstName: 'Jaime', department: "CSE" },
-		{ id: 4, lastName: 'Stark', firstName: 'Arya', department: "CSE" },
-		{ id: 5, lastName: 'Targaryen', firstName: 'Daenerys', department: "CSE" },
-		{ id: 6, lastName: 'Melisandre', firstName: null, department: "CSE" },
-		{ id: 7, lastName: 'Clifford', firstName: 'Ferrara', department: "CSE" },
-		{ id: 8, lastName: 'Frances', firstName: 'Rossini', department: "CSE" },
-		{ id: 9, lastName: 'Roxie', firstName: 'Harvey', department: "CSE" },
+		{ id: 'CUCSEMT1', lastName: 'Khatua', firstName: 'Sunirmal', department: "CSE", course: 'M.Tech', semester:'2nd', subject: 'Mobile Computing', email: 'example1@gmail.com', mobile_no: '1236546835' },
+		{ id: 'CUCSEMT2', lastName: 'Chaki', firstName: 'Nabendu', department: "CSE", course: 'M.Tech', semester:'2nd', subject: 'Topics in DBMS', email: 'example2@gmail.com', mobile_no: '1236549321' },
+		{ id: 'CUCSEMT3', lastName: 'Setua', firstName: 'Sanjit', department: "CSE", course: 'M.Tech', semester:'2nd', subject: 'Real Time System', email: 'example3@gmail.com', mobile_no: '1236546835' },
+		{ id: 'CUCSEMT4', lastName: 'Choudhury', firstName: 'Sankhayan', department: "CSE", course: 'M.Tech', semester:'2nd', subject: 'Wireless Network', email: 'example4@gmail.com', mobile_no: '1236546835' },
+		{ id: 'CUCSEMT5', lastName: 'Banerjee', firstName: 'Pritha', department: "CSE", course: 'M.Tech',semester:'1st', subject: 'Algorithm', email: 'example5@gmail.com', mobile_no: '1236546835' },
+		{ id: 'CUCSEMT6', lastName: 'Das', firstName: 'Rajib', department: "CSE", course: 'M.Tech',semester:'1st', subject: 'Statistics & Probability', email: 'example6@gmail.com', mobile_no: '1236546835' },
+		{ id: 'CUCSEMT7', lastName: 'Saha', firstName: 'Banani', department: "CSE", course: 'M.Tech', semester:'1st', subject: 'Image Processing', email: 'example7@gmail.com', mobile_no: '1236546835' },
+		{ id: 'CUCSEMT3', lastName: 'Setua', firstName: 'Sanjit', department: "CSE", course: 'M.Tech', semester:'1st', subject: 'Machine Learning', email: 'example3@gmail.com', mobile_no: '1236546835' },
+		
 	]);
 
 	return (

@@ -27,6 +27,13 @@ const columns = [
 		flex: 1
 	},
 	{
+		field: 'course',
+		headerName: 'Course',
+		width: 110,
+		editable: true,
+		flex: 1
+	},
+	{
 		field: 'semester',
 		headerName: 'Semester',
 		width: 50,
@@ -73,15 +80,34 @@ const columns = [
 
 const Students = () => {
 	const [teachers, setTeachers] = useState([
-		{ id: 1, lastName: 'Snow', firstName: 'Jon', department: "CSE", semester: "V", action: <a href="see_more">"See More"</a>},
-		{ id: 2, lastName: 'Lannister', firstName: 'Cersei', department: "CSE", semester: "VI" },
-		{ id: 3, lastName: 'Lannister', firstName: 'Jaime', department: "CSE", semester: "VI" },
-		{ id: 4, lastName: 'Stark', firstName: 'Arya', department: "CSE", semester: "IV" },
-		{ id: 5, lastName: 'Targaryen', firstName: 'Daenerys', department: "CSE", semester: "III" },
-		{ id: 6, lastName: 'Melisandre', firstName: null, department: "CSE", semester: "III" },
-		{ id: 7, lastName: 'Clifford', firstName: 'Ferrara', department: "CSE", semester: "IV" },
-		{ id: 8, lastName: 'Frances', firstName: 'Rossini', department: "CSE", semester: "VII" },
-		{ id: 9, lastName: 'Roxie', firstName: 'Harvey', department: "CSE", semester: "VIII" },
+		{ id: 'CUCSEMS11', lastName: 'Snow', firstName: 'Jon', department: "CSE", course: 'M.Tech',semester: "1st", registration_no: '133-1111-0011-23', roll_no: '97/CSM/211001'},
+		{ id: 'CUCSEMS12', lastName: 'Lannister', firstName: 'Cersei', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0012-23', roll_no: '97/CSM/211002' },
+		{ id: 'CUCSEMS13', lastName: 'Lannister', firstName: 'Jaime', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0013-23', roll_no: '97/CSM/211003' },
+		{ id: 'CUCSEMS14', lastName: 'Stark', firstName: 'Arya', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0014-23', roll_no: '97/CSM/211004' },
+		{ id: 'CUCSEMS15', lastName: 'Targaryen', firstName: 'Daenerys', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0015-23', roll_no: '97/CSM/211005'  },
+		{ id: 'CUCSEMS16', lastName: 'Melisandre', firstName: 'Neli', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0016-23', roll_no: '97/CSM/211006'  },
+		{ id: 'CUCSEMS17', lastName: 'Clifford', firstName: 'Ferrara', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0017-23', roll_no: '97/CSM/211007'  },
+		{ id: 'CUCSEMS18', lastName: 'Frances', firstName: 'Rossini', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0018-23', roll_no: '97/CSM/211008' },
+		{ id: 'CUCSEMS19', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "1st", registration_no: '133-1111-0019-23', roll_no: '97/CSM/211009' },
+		{ id: 'CUCSEMS21', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0021-22', roll_no: '97/CSM/211011' },
+		{ id: 'CUCSEMS22', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0022-22', roll_no: '97/CSM/211012' },
+		{ id: 'CUCSEMS23', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0023-22', roll_no: '97/CSM/211013' },
+		{ id: 'CUCSEMS24', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0024-22', roll_no: '97/CSM/211014' },
+		{ id: 'CUCSEMS25', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0025-22', roll_no: '97/CSM/211015' },
+		{ id: 'CUCSEMS26', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0026-22', roll_no: '97/CSM/211016' },
+		{ id: 'CUCSEMS27', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0027-22', roll_no: '97/CSM/211017' },
+		{ id: 'CUCSEMS28', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0028-22', roll_no: '97/CSM/211018' },
+		{ id: 'CUCSEMS29', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0029-22', roll_no: '97/CSM/211019' },
+		{ id: 'CUCSEMS210', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0030-22', roll_no: '97/CSM/211020' },
+		{ id: 'CUCSEMS211', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0031-22', roll_no: '97/CSM/211021' },
+		{ id: 'CUCSEMS212', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0032-22', roll_no: '97/CSM/211022' },
+		{ id: 'CUCSEMS213', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0033-22', roll_no: '97/CSM/211023' },
+		{ id: 'CUCSEMS214', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0034-22', roll_no: '97/CSM/211024' },
+		{ id: 'CUCSEMS215', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0035-22', roll_no: '97/CSM/211025' },
+		{ id: 'CUCSEMS216', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0036-22', roll_no: '97/CSM/211026' },
+		{ id: 'CUCSEMS217', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0037-22', roll_no: '97/CSM/211027' },
+		{ id: 'CUCSEMS218', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0038-22', roll_no: '97/CSM/211028' },
+		{ id: 'CUCSEMS219', lastName: 'Roxie', firstName: 'Harvey', department: "CSE", course: 'M.Tech', semester: "2nd", registration_no: '133-1111-0039-22', roll_no: '97/CSM/211029' },
 	]);
 
 	return (

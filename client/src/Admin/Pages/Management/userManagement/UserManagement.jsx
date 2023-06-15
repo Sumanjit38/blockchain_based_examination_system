@@ -19,20 +19,34 @@ const columns = [
 		editable: true,
 		flex: 1
 	},
+	{
+		field: 'email',
+		headerName: 'Email',
+		width: 150,
+		editable: true,
+		flex: 1
+	},
+	{
+		field: 'mobile_no',
+		headerName: 'Mobile No',
+		width: 150,
+		editable: true,
+		flex: 1
+	},
 	
 ];
 
 const UserManagement = () => {
 	const [teachers, setTeachers] = useState([
-		{ id: 1, lastName: 'Snow', firstName: 'Jon', department: "CSE" },
-		{ id: 2, lastName: 'Lannister', firstName: 'Cersei', department: "CSE" },
-		{ id: 3, lastName: 'Lannister', firstName: 'Jaime', department: "CSE" },
-		{ id: 4, lastName: 'Stark', firstName: 'Arya', department: "CSE" },
+		{ id: 'CUCSEA1', lastName: 'Setua', firstName: 'Sanjit', department: "CSE" },
+		{ id: 'CUCSEA2', lastName: 'Chaki', firstName: 'Nabendu', department: "CSE" },
+		{ id: 'CUCSEA3', lastName: 'Das', firstName: 'Sovonesh', department: "CSE" },
+		/*{ id: 4, lastName: 'Stark', firstName: 'Arya', department: "CSE" },
 		{ id: 5, lastName: 'Targaryen', firstName: 'Daenerys', department: "CSE" },
 		{ id: 6, lastName: 'Melisandre', firstName: null, department: "CSE" },
 		{ id: 7, lastName: 'Clifford', firstName: 'Ferrara', department: "CSE" },
 		{ id: 8, lastName: 'Frances', firstName: 'Rossini', department: "CSE" },
-		{ id: 9, lastName: 'Roxie', firstName: 'Harvey', department: "CSE" },
+		{ id: 9, lastName: 'Roxie', firstName: 'Harvey', department: "CSE" },*/
 	]);
 
 	return (
